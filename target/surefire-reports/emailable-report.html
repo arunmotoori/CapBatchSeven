@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">11</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">58,712</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">tests.SearchTest</td><td><a href="#m0">searchForAValidProduct</a></td><td rowspan="1">1668595623023</td><td rowspan="1">623</td></tr><tr class="failedeven"><td><a href="#m1">searchWithAnInvalidProduct</a></td><td rowspan="1">1668595626716</td><td rowspan="1">539</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">tests.SearchTest</td><td><a href="#m2">searchWithoutEnteringProductDetails</a></td><td rowspan="1">1668595627797</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">tests.LoginTest</td><td><a href="#m3">loginWithInvalidCredentials</a></td><td rowspan="1">1668595595838</td><td rowspan="1">1276</td></tr><tr class="passedeven"><td><a href="#m4">loginWithInvalidEmailAndValidPassword</a></td><td rowspan="1">1668595587988</td><td rowspan="1">1317</td></tr><tr class="passedeven"><td><a href="#m5">loginWithValidCredentials</a></td><td rowspan="3">1668595583622</td><td rowspan="3">1366</td></tr><tr class="passedeven"><td><a href="#m6">loginWithValidCredentials</a></td></tr><tr class="passedeven"><td><a href="#m7">loginWithValidCredentials</a></td></tr><tr class="passedeven"><td><a href="#m8">loginWithValidEmailAndInvalidPassword</a></td><td rowspan="1">1668595591990</td><td rowspan="1">1130</td></tr><tr class="passedeven"><td><a href="#m9">loginWithoutProvidingAnyCredentials</a></td><td rowspan="1">1668595599847</td><td rowspan="1">1017</td></tr><tr class="passedodd"><td rowspan="4">tests.RegisterTest</td><td><a href="#m10">registerWithAllFields</a></td><td rowspan="1">1668595609094</td><td rowspan="1">2110</td></tr><tr class="passedodd"><td><a href="#m11">registerWithDuplicateEmailAddress</a></td><td rowspan="1">1668595618101</td><td rowspan="1">1961</td></tr><tr class="passedodd"><td><a href="#m12">registerWithMandatoryFields</a></td><td rowspan="1">1668595603535</td><td rowspan="1">1965</td></tr><tr class="passedodd"><td><a href="#m13">registerWithoutFillingAnyFieds</a></td><td rowspan="1">1668595614074</td><td rowspan="1">1275</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">tests.SearchTest#searchForAValidProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [false] but found [true]
+	at tests.SearchTest.searchForAValidProduct(SearchTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.SearchTest#searchWithAnInvalidProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: did not expect [There is no product that matches the search criteria.] but found [There is no product that matches the search criteria.]
+	at tests.SearchTest.searchWithAnInvalidProduct(SearchTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.SearchTest#searchWithoutEnteringProductDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.SearchTest.searchWithoutEnteringProductDetails() on instance tests.SearchTest@2d7275fc depends on not successfully finished methods 
+[tests.SearchTest.searchForAValidProduct() on instance tests.SearchTest@2d7275fc
+tests.SearchTest.searchWithAnInvalidProduct() on instance tests.SearchTest@2d7275fc]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.LoginTest#loginWithInvalidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.LoginTest#loginWithInvalidEmailAndValidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.LoginTest#loginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>amotooricap3@gmail.com</td><td>12345</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.LoginTest#loginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>amotooricap9@gmail.com</td><td>12345</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.LoginTest#loginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>amotooricap1@gmail.com</td><td>12345</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.LoginTest#loginWithValidEmailAndInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.LoginTest#loginWithoutProvidingAnyCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.RegisterTest#registerWithAllFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.RegisterTest#registerWithDuplicateEmailAddress</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">tests.RegisterTest#registerWithMandatoryFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">tests.RegisterTest#registerWithoutFillingAnyFieds</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
