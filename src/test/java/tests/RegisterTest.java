@@ -13,6 +13,8 @@ import pageobjects.AccountSuccessPage;
 import pageobjects.HomePage;
 import pageobjects.RegisterPage;
 
+//This is RegisterTest
+
 public class RegisterTest extends Base{
 	
 	public WebDriver driver;
